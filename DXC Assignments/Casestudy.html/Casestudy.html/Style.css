@@ -1,0 +1,376 @@
+* {
+  box-sizing: border-box;
+}
+  
+
+body {
+  background-color: #ffffff;
+  color: #3f2860;
+
+  
+
+}
+
+
+a {
+  color: inherit;
+}
+
+header {
+
+  
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 4em;
+  text-align: center;
+  color: blue;
+  background-size: cover;
+  background-image: url("lilyheader.jpg");
+  background-repeat: no-repeat;
+}
+
+/*header img {
+  padding: 10px;
+  width: 125px;
+}*/
+
+header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header a:hover {
+  opacity: 0.8;
+}
+
+h1 {
+  font-weight: 100;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  margin-top: 0px;
+}
+
+nav {
+  width: 100%;
+  text-align: center;
+  font-size: 1.15em;
+  letter-spacing: 0.1em;
+  background-color: #9bc1c2;
+}
+
+nav ul {
+  
+  background-color:#9bc1c2;;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
+  display: flex;
+}
+
+
+nav li {
+  display: inline-block;
+  letter-spacing: 0.1em;
+  margin-right: 5px;
+}
+
+nav a {
+  
+  color: #3f2860;
+  padding: 20px;
+  background-color:rgb(148, 135, 222);
+  nav-right: auto;
+  
+}
+
+nav a:hover {
+  opacity: 0.85;
+  color: #473b57;
+  background-color: #92a2a2;
+}
+
+nav a:active {
+  color: #473b57;
+  background-color: #92a2a2;
+  
+}
+
+main {
+  margin-bottom: 20px;
+}
+
+main h2,
+main h3,
+main h4,
+main h5,
+main h6,
+main p {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+main h2 {
+  font-size: 1.24em;
+  font-weight: 100;
+  text-transform: uppercase;
+
+  letter-spacing: 2px;
+}
+
+main h3 {
+  font-size: 1.2em;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+main ul {
+  padding-left: 64px;
+}
+
+main dl {
+  padding-left: 48px;
+  padding-right: 34px;
+}
+
+dl {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+dt {
+  font-weight: 100;
+  font-size: 1.15em;
+  margin-bottom: 10px;
+  margin-top: 14px;
+}
+
+#hero {
+  text-align: center;
+}
+
+/* Makes the hero image 100% the width of its container. */
+#hero img {
+  width: 100%;
+}
+
+#wrapper {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f8f8f6;
+  min-width: 1025px;
+  max-width: 1200px;
+}
+
+/* class to center text when necessary */
+.center-inline {
+  text-align: center;
+}
+
+.floatleft {
+  float: left;
+  margin-right: 4em;
+}
+
+.clear {
+  clear: both;
+}
+
+.studio {
+  font-style: italic;
+}
+
+.row {
+  clear: both;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.row img {
+  width: 100%;
+}
+
+.col-half {
+  width: 50%;
+  float: left;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.col-third {
+  width: 33.333%;
+  float: left;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.button {
+  margin-top: 42px;
+  text-align: center;
+  margin-bottom: 42px;
+}
+
+.mobile {
+  display: none;
+}
+
+.desktop {
+  display: inline;
+}
+
+.lightbox {
+  /* lightbox does not display initially */
+  display: none;
+
+  /* Position and style of lightbox. It covers all of the page starting at the top left corner */
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+
+  /* Places the lightbox above all other content */
+  z-index: 999;
+
+  /* Adds a black background at 80% opacity */
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.lightbox img {
+  max-width: 75%;
+  margin-top: 2%;
+}
+
+.lightbox iframe {
+  /* Adds a top margin for the YouTube iFrame */
+  margin-top: 15%;
+}
+
+.lightbox:target {
+  display: block;
+  transition: 0.5s ease;
+  outline: none;
+}
+
+.thumb:hover {
+  opacity: 0.8;
+  transition: 0.1s ease;
+}
+
+.button a {
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: #3f2860;
+  padding: 16px;
+  background-color: #9bc1c2;
+}
+
+.button a:hover {
+  opacity: 0.85;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  clear: both;
+  background-color: #9bc1c2;
+  font-size: 0.6em;
+  font-style: italic;
+  text-align: center;
+  padding: 1em;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  #wrapper {
+    width: 100%;
+    min-width: 300px;
+    margin: 0;
+    padding: 0;
+  }
+  img{
+      margin-bottom: 50px;
+  }
+
+  main {
+    font-size: 1.15em;
+  }
+
+  main h2 {
+    font-size: 1.15em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 20px;
+  }
+
+  nav {
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  nav li {
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+
+  nav a {
+    display: block;
+    padding: 0.75em;
+  }
+
+  .col-half {
+    float: none;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 28px;
+  }
+
+  .col-third {
+    float: none;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  main h2 {
+    font-size: 1.25em;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: inline;
+  }
+}
